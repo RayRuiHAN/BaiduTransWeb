@@ -55,7 +55,7 @@ for each_text in long_text:
     driver.find_element(by=By.XPATH,
                         value='/html/body/div[1]/div[2]/div/div/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/div[1]/a['
                               '1]/span').click()
-    output = output + root.clipboard_get()
+    output = root.clipboard_get()
     count += 1
     print(count, '/', total)
     driver.find_element(by=By.XPATH,
